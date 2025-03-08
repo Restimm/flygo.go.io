@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlyGo - Pembayaran</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="banner">
+        <img src="assets/flygo1.png" alt="Banner 1" class="banner-img active">
+        <img src="assets/flygo.png" alt="Banner 2" class="banner-img">
+    </div>
+    <nav class="navigation">
+        <a href="index.html" class="nav-btn">Beranda</a>
+        <a href="search.html" class="nav-btn">Cari Tiket</a>
+        <a href="checkin.html" class="nav-btn">Check-in</a>
+        <a href="about.html" class="nav-btn">About</a>
+       
+    </nav>
+    <div class="content">
+        <h1>Pembayaran</h1>
+        <p>Bayar dengan QRIS (Bayar 5000!)</p>
+        <img src="assets/qris.jpg" alt="QRIS" style="max-width: 200px;">
+        <form id="payment-form">
+            <select id="payment-status" required>
+                <option value="">Pilih Status Pembayaran</option>
+                <option value="paid">Sudah Bayar</option>
+                <option value="unpaid">Belum Bayar</option>
+            </select>
+            <button type="submit">Selesai</button>
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="path/to/local/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

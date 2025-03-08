@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlyGo - Cari Tiket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="banner">
+        <img src="assets/flygo1.png" alt="Banner 1" class="banner-img active">
+        <img src="assets/flygo.png" alt="Banner 2" class="banner-img">
+    </div>
+    <nav class="navigation">
+        <a href="index.html" class="nav-btn">Beranda</a>
+        <a href="search.html" class="nav-btn active">Cari Tiket</a>
+        <a href="checkin.html" class="nav-btn">Check-in</a>
+        <a href="about.html" class="nav-btn">About</a>
+        
+    </nav>
+    <div class="content">
+        <h1>Cari Tiket Pesawat</h1>
+        <form id="search-form">
+            <select id="departure" required>
+                <option value="">Pilih Kota Keberangkatan</option>
+                <option value="KNO">Medan (KNO)</option>
+                <option value="CGK">Jakarta (CGK)</option>
+                <option value="SUB">Surabaya (SUB)</option>
+                <option value="DPS">Denpasar (DPS)</option>
+                <option value="BPN">Balikpapan (BPN)</option>
+                <option value="UPG">Makassar (UPG)</option>
+                <option value="JOG">Yogyakarta (JOG)</option>
+                <option value="PDG">Padang (PDG)</option>
+                <option value="PKU">Pekanbaru (PKU)</option>
+                <option value="PLM">Palembang (PLM)</option>
+                <option value="BTH">Batam (BTH)</option>
+                <option value="BDJ">Banjarmasin (BDJ)</option>
+                <option value="PNK">Pontianak (PNK)</option>
+                <option value="SRG">Semarang (SRG)</option>
+                <option value="SOC">Solo (SOC)</option>
+                <option value="AMQ">Ambon (AMQ)</option>
+                <option value="DJJ">Jayapura (DJJ)</option>
+                <option value="TIM">Timika (TIM)</option>
+                <option value="BIK">Biak (BIK)</option>
+                <option value="MDC">Manado (MDC)</option>
+            </select>
+            <select id="destination" required>
+                <option value="">Pilih Kota Tujuan</option>
+                <option value="KNO">Medan (KNO)</option>
+                <option value="CGK">Jakarta (CGK)</option>
+                <option value="SUB">Surabaya (SUB)</option>
+                <option value="DPS">Denpasar (DPS)</option>
+                <option value="BPN">Balikpapan (BPN)</option>
+                <option value="UPG">Makassar (UPG)</option>
+                <option value="JOG">Yogyakarta (JOG)</option>
+                <option value="PDG">Padang (PDG)</option>
+                <option value="PKU">Pekanbaru (PKU)</option>
+                <option value="PLM">Palembang (PLM)</option>
+                <option value="BTH">Batam (BTH)</option>
+                <option value="BDJ">Banjarmasin (BDJ)</option>
+                <option value="PNK">Pontianak (PNK)</option>
+                <option value="SRG">Semarang (SRG)</option>
+                <option value="SOC">Solo (SOC)</option>
+                <option value="AMQ">Ambon (AMQ)</option>
+                <option value="DJJ">Jayapura (DJJ)</option>
+                <option value="TIM">Timika (TIM)</option>
+                <option value="BIK">Biak (BIK)</option>
+                <option value="MDC">Manado (MDC)</option>
+            </select>
+            <input type="date" id="date" required>
+            <button type="submit">Cari</button>
+        </form>
+        <div id="ticket-list"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
